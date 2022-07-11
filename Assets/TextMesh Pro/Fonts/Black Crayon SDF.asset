@@ -56,7 +56,9 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Black Crayon SDF Material
   m_Shader: {fileID: 4800000, guid: 68e6db2ebdc24f95958faec2be5558d6, type: 3}
-  m_ValidKeywords: []
+  m_ValidKeywords:
+  - GLOW_ON
+  - UNDERLAY_ON
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -90,11 +92,11 @@ Material:
     m_Ints: []
     m_Floats:
     - _Ambient: 0.5
-    - _Bevel: 0.5
+    - _Bevel: 0.31
     - _BevelClamp: 0
-    - _BevelOffset: 0
+    - _BevelOffset: -0.248
     - _BevelRoundness: 0
-    - _BevelWidth: 0
+    - _BevelWidth: 0.233
     - _BumpFace: 0
     - _BumpOutline: 0
     - _ColorMask: 15
@@ -103,10 +105,10 @@ Material:
     - _FaceDilate: 0
     - _FaceUVSpeedX: 0
     - _FaceUVSpeedY: 0
-    - _GlowInner: 0.05
-    - _GlowOffset: 0
-    - _GlowOuter: 0.05
-    - _GlowPower: 0.75
+    - _GlowInner: 0.562
+    - _GlowOffset: -0.17
+    - _GlowOuter: 0.174
+    - _GlowPower: 0.158
     - _GradientScale: 6
     - _LightAngle: 3.1416
     - _MaskSoftnessX: 0
@@ -117,9 +119,9 @@ Material:
     - _OutlineWidth: 0
     - _PerspectiveFilter: 0.875
     - _Reflectivity: 10
-    - _ScaleRatioA: 1
-    - _ScaleRatioB: 1
-    - _ScaleRatioC: 1
+    - _ScaleRatioA: 0.8333333
+    - _ScaleRatioB: 0.6770833
+    - _ScaleRatioC: 0.6770833
     - _ScaleX: 1
     - _ScaleY: 1
     - _ShaderFlags: 0
@@ -132,10 +134,10 @@ Material:
     - _StencilWriteMask: 255
     - _TextureHeight: 512
     - _TextureWidth: 512
-    - _UnderlayDilate: 0
-    - _UnderlayOffsetX: 0
-    - _UnderlayOffsetY: 0
-    - _UnderlaySoftness: 0
+    - _UnderlayDilate: -0.12
+    - _UnderlayOffsetX: 0.62
+    - _UnderlayOffsetY: -0.45
+    - _UnderlaySoftness: 0.065
     - _VertexOffsetX: 0
     - _VertexOffsetY: 0
     - _WeightBold: 0.75
@@ -150,7 +152,7 @@ Material:
     - _ReflectFaceColor: {r: 0, g: 0, b: 0, a: 1}
     - _ReflectOutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
-    - _UnderlayColor: {r: 0, g: 0, b: 0, a: 0.5}
+    - _UnderlayColor: {r: 0, g: 0.8867924, b: 0.63342434, a: 0.5}
   m_BuildTextureStacks: []
 --- !u!114 &11400000
 MonoBehaviour:
@@ -164,9 +166,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: Black Crayon SDF
   m_EditorClassIdentifier: 
-  hashCode: 0
+  hashCode: 801514974
   material: {fileID: -1233508687947219395}
-  materialHashCode: 0
+  materialHashCode: -1274970818
   m_Version: 1.1.0
   m_SourceFontFileGUID: e5dee6ab0205243b6b07d0f9c5a500b5
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: e5dee6ab0205243b6b07d0f9c5a500b5, type: 3}
